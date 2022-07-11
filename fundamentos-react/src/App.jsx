@@ -5,18 +5,32 @@ import ComParametro from './components/basicos/ComParametro';
 import Fragmento from './components/basicos/Fragmento';
 import Aleatorio from './components/basicos/Aleatorio';
 
+import Card from './components/layout/Card';
+
 export default function App(props) {
   return (
     <div id="app">
-      <Aleatorio min={1} max={100} />
-      <h1>Fundamentos React (arrow) </h1>
-      <Fragmento />
-      <ComParametro 
-        titulo="Situação do Aluno"  
-        aluno="Pedro"
-        nota={9.3}
-      />
-      <Primeiro />
+      <h1>Fundamentos React</h1>
+
+      <Card titulo="#04 - Desafio Aleatório" color="#080">
+        <Aleatorio min={1} max={100} />
+      </Card>
+
+      <Card titulo="#03 - Fragmento" color="#2c0ce3">
+        <Fragmento />
+      </Card>
+
+      <Card titulo="#02 - Primeiro Parametro" color="#e30c5c">
+        <ComParametro 
+          titulo="Situação do Aluno"  
+          aluno="Pedro"
+          nota={9.3}
+        />
+      </Card>
+
+      <Card titulo="#01 - Primeiro Componente" color="#e39d0c">
+        <Primeiro />
+      </Card>
     </div>
   )
 }
