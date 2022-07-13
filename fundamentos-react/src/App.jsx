@@ -6,6 +6,8 @@ import Fragmento from './components/basicos/Fragmento';
 import Aleatorio from './components/basicos/Aleatorio';
 import Familia from './components/basicos/Familia';
 import FamiliaMembro from './components/basicos/FamiliaMembro';
+import ListaAlunos from "./components/repeticao/ListaAlunos";
+import TabelaProdutos from "./components/repeticao/TabelaProdutos";
 
 import Card from './components/layout/Card';
 
@@ -13,6 +15,14 @@ export default function App() {
   return (
     <div id="app">
       <h1>Fundamentos React</h1>
+
+      <Card title="#06 - Primeiro Componente" color="#F08910">
+        <TabelaProdutos></TabelaProdutos>
+      </Card>
+
+      <Card title="#06 - Primeiro Componente" color="#F08910">
+        <ListaAlunos></ListaAlunos>
+      </Card>
 
       <Card titulo="#05 - Familia" color="#5b0060">
         <Familia sobrenome="Silva">
