@@ -21,7 +21,7 @@ export default function App() {
       <h1>Fundamentos React</h1>
 
 
-      <Card titulo="#10 - Comunicação Indireta" color="#312655">
+      <Card titulo="#10 - Comunicação Indireta" color="#312612">
        <IndiretaPai></IndiretaPai>
       </Card>
 
