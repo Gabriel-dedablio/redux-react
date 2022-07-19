@@ -12,11 +12,22 @@ import ParOuImpar from "./components/condicional/ParOuImpar";
 import UsuarioInfo from "./components/condicional/UsuarioInfo";
 
 import Card from './components/layout/Card';
+import DiretaPai from "./components/comunicacao/DiretaPai";
+import IndiretaPai from "./components/comunicacao/IndiretaPai";
 
 export default function App() {
   return (
     <div id="app">
       <h1>Fundamentos React</h1>
+
+
+      <Card titulo="#10 - Comunicação Indireta" color="#312655">
+       <IndiretaPai></IndiretaPai>
+      </Card>
+
+      <Card titulo="#10 - Comunicação Direta" color="#3e4ac9">
+       <DiretaPai></DiretaPai>
+      </Card>
 
       <Card titulo="#09 - Condicional" color="#0F1231">
         <UsuarioInfo usuario={{ nome: 'Gabriel'}}></UsuarioInfo>
